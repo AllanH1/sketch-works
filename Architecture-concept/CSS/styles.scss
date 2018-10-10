@@ -1,0 +1,9 @@
+@import "./Partials/reset";
+@import "./Partials/nav";
+@import "./Partials/hero";
+
+body {
+  background: url(../Assets/Pictures/page-background.png);
+  background-position: top;
+  padding: 170px 200px;
+}

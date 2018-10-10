@@ -1,0 +1,37 @@
+.nav {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  top: 224px;
+  left: 280px;
+  width: 1042px;
+  &__link {
+    text-decoration: none;
+    color: #242e2d;
+    &__text {
+      font-size: 0px;
+    }
+
+    &__text--search {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: bold;
+    }
+
+    &__icon--hotcakes {
+      height: 22px;
+      width: 24px;
+    }
+
+    &__icon--logo {
+      height: 55.4px;
+      width: 57px;
+    }
+
+    &__icon--search {
+      height: 17px;
+      width: 16px;
+    }
+  }
+}

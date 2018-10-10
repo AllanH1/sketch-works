@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.nav {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  top: 224px;
+  left: 280px;
+  width: 1042px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #242e2d;
+}
+.nav__link__text {
+  font-size: 0px;
+}
+.nav__link__text--search {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+.nav__link__icon--hotcakes {
+  height: 22px;
+  width: 24px;
+}
+.nav__link__icon--logo {
+  height: 55.4px;
+  width: 57px;
+}
+.nav__link__icon--search {
+  height: 17px;
+  width: 16px;
+}
+
+.hero {
+  background: url(../Assets/Pictures/hero-background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 1156px;
+  padding: 55px 78px 0 80px;
+  position: relative;
+  width: 1200px;
+}
+
+body {
+  background: url(../Assets/Pictures/page-background.png);
+  background-position: top;
+  padding: 170px 200px;
+}
+
+/*# sourceMappingURL=styles.css.map */
