@@ -1,12 +1,12 @@
 .nav {
-  z-index: 5;
+  align-items: flex-start;
+  z-index: 10;
   position: absolute;
   display: flex;
-  justify-content: space-between;
-  height: 56px;
   top: 224px;
   left: 280px;
   width: 1042px;
+  height: 56px;
   &__link {
     text-decoration: none;
     color: #242e2d;
@@ -15,18 +15,27 @@
     }
 
     &__text--search {
+      display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px;
       font-weight: bold;
+      line-height: 18px;
+      margin-right: 12px;
+      text-transform: uppercase;
     }
 
     &__icon--hotcakes {
       height: 22px;
       width: 24px;
+      margin-right: 471px;
+      margin-top: -25px;
     }
 
     &__icon--logo {
       height: 55.4px;
       width: 57px;
+      margin-right: 414px;
+      margin-top: -20px;
     }
 
     &__icon--search {

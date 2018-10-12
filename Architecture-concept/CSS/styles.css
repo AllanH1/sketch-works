@@ -140,14 +140,14 @@ table {
 }
 
 .nav {
-  z-index: 5;
+  align-items: flex-start;
+  z-index: 10;
   position: absolute;
   display: flex;
-  justify-content: space-between;
-  height: 56px;
   top: 224px;
   left: 280px;
   width: 1042px;
+  height: 56px;
 }
 .nav__link {
   text-decoration: none;
@@ -157,16 +157,25 @@ table {
   font-size: 0px;
 }
 .nav__link__text--search {
+  display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
   font-weight: bold;
+  line-height: 18px;
+  margin-right: 12px;
+  text-transform: uppercase;
 }
 .nav__link__icon--hotcakes {
   height: 22px;
   width: 24px;
+  margin-right: 471px;
+  margin-top: -25px;
 }
 .nav__link__icon--logo {
   height: 55.4px;
   width: 57px;
+  margin-right: 414px;
+  margin-top: -20px;
 }
 .nav__link__icon--search {
   height: 17px;
@@ -174,13 +183,227 @@ table {
 }
 
 .hero {
-  background: url(../Assets/Pictures/hero-background.png);
+  background: url(../Assets/Pictures/hero-background.png), white;
   background-position: top;
   background-repeat: no-repeat;
+  display: flex;
   height: 1156px;
   padding: 55px 78px 0 80px;
   position: relative;
   width: 1200px;
+}
+.hero .hero__wrapper--left,
+.hero .hero__wrapper--right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 188px;
+}
+.hero .hero__wrapper--left {
+  width: 330px;
+}
+.hero .hero__wrapper--left h1 {
+  color: #242e2d;
+  font-family: "DPSDBeyond", serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: -2px;
+  margin-bottom: 254px;
+  font-size: 54px;
+  line-height: 64px;
+  width: 227px;
+}
+.hero .hero__wrapper--left .wrapper--white {
+  background-color: white;
+  padding: 20px 20px 0 20px;
+}
+.hero .hero__wrapper--left .hero__article {
+  background: url(../Assets/Pictures/hero-article-crown_house.png);
+  background-size: 290px 270px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.hero .hero__wrapper--left .hero__article__title {
+  color: #242e2d;
+  font-family: "DPSDBeyond", serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 312px;
+  line-height: 31px;
+}
+.hero .hero__wrapper--left .hero__article__author {
+  color: #9b9b9b;
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+  margin-top: 16px;
+}
+.hero .hero__wrapper--right {
+  background-color: white;
+  margin-left: 26px;
+  padding: 20px 20px 0 20px;
+}
+.hero .hero__wrapper--right .hero__article {
+  background: url(../Assets/Pictures/hero-article-luxembourg_apartment.png);
+  background-size: 645px 889px;
+  display: flex;
+  padding-top: 710px;
+}
+.hero .hero__wrapper--right .hero__article .article__wrapper--left {
+  background-color: white;
+  width: 354px;
+  height: 183px;
+}
+.hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__title {
+  color: #242e2d;
+  font-family: "DPSDBeyond", serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+.hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__title--the {
+  color: #9b9b9b;
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+  display: block;
+  margin-top: 27px;
+  margin-bottom: 17px;
+}
+.hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__author {
+  color: #9b9b9b;
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+}
+.hero .hero__wrapper--right .hero__article .article__wrapper--right {
+  background-color: rgba(11, 15, 15, 0.92);
+  color: white;
+  height: 183px;
+  width: 290px;
+  padding: 28px 28px 0px 29px;
+}
+.hero .hero__wrapper--right .hero__article .article__wrapper--right .hero__article__body {
+  font-size: 15px;
+  font-family: "SourceSansPro-Regular", serif;
+  line-height: 24px;
+}
+
+.content__left {
+  color: white;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  width: 290px;
+}
+.content__left .content__tile__portal {
+  width: 290px;
+  height: 290px;
+}
+.content__left .content__tile__portal__text {
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  display: block;
+}
+.content__left .content__tile__portal__link {
+  font-family: "DPSDBeyond", serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+.content__left .news {
+  background: url(../Assets/Pictures/tile-news-background.png), #74a9ca;
+  background-position: center;
+  background-size: 290px 290px;
+  background-blend-mode: soft-light;
+  margin-bottom: 62px;
+}
+.content__left .news__text {
+  padding-top: 100px;
+  text-transform: capitalize;
+}
+.content__left .news__text::after {
+  border-top: solid white 2px;
+  content: "border";
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  margin: 25px auto 27px auto;
+  width: 75px;
+}
+.content__left .view {
+  background: linear-gradient(0deg, rgba(11, 15, 15, 0.93), rgba(11, 15, 15, 0.93)), url(../Assets/Pictures/tile-view-background.png);
+  background-size: 290px 470px;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 582px;
+  margin-bottom: 52px;
+}
+.content__left .view__text {
+  margin: 0 auto;
+  padding-top: 174px;
+  width: 129px;
+}
+.content__left .view__link {
+  border: solid 2px white;
+  font-size: 19px;
+  line-height: 19px;
+  padding: 13px 42px 10px 40px;
+  margin-top: 29px;
+  margin-bottom: 212px;
+}
+.content__left .view__title {
+  color: #242e2d;
+  font-family: "DPSDBeyond", serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.content__left .view__text--small {
+  color: #9b9b9b;
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+}
+.content__left .about {
+  background: url(../Assets/Pictures/tile-about-background.png), #d87979;
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: 290px 290px;
+}
+.content__left .about__link {
+  padding-top: 97px;
+}
+.content__left .about__text {
+  text-transform: capitalize;
+}
+.content__left .about__text::before {
+  border-top: solid white 2px;
+  content: "border";
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  margin: 17px auto 24px auto;
+  width: 75px;
+}
+
+.content {
+  padding: 0 78px 0 80px;
+  background-color: white;
 }
 
 body {

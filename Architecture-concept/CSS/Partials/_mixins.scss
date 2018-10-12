@@ -1,0 +1,40 @@
+// =====================
+// ==== photo tiles ====
+
+@mixin photo-text-title {
+  color: #242e2d;
+  font-family: "DPSDBeyond", serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@mixin photo-text-small {
+  color: #9b9b9b;
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+}
+
+// =================
+// ==== portals ====
+
+@mixin portal-link {
+  font-family: "DPSDBeyond", serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+@mixin portal-text {
+  font-family: "SourceSansPro-It", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+}
+
+@mixin portal-background-position {
+  background-position: center;
+  background-size: 290px 290px;
+}

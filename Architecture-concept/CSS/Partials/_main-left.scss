@@ -1,0 +1,115 @@
+// ==================================
+// news, view and about tiles
+// ==================================
+
+@import "./mixins";
+
+.content__left {
+  color: white;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  width: 290px;
+
+  .content__tile__portal {
+    width: 290px;
+    height: 290px;
+
+    &__text {
+      @include portal-text;
+      display: block;
+    }
+    &__link {
+      @include portal-link;
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .news {
+    background: url(../Assets/Pictures/tile-news-background.png), #74a9ca;
+    @include portal-background-position;
+    background-blend-mode: soft-light;
+    margin-bottom: 62px;
+
+    &__text {
+      padding-top: 100px;
+      text-transform: capitalize;
+    }
+
+    &__text::after {
+      border-top: solid white 2px;
+      content: "border";
+      display: block;
+      font-size: 0px;
+      height: 0px;
+      margin: 25px auto 27px auto;
+      width: 75px;
+    }
+  }
+
+  .view {
+    background: linear-gradient(
+        0deg,
+        rgba(11, 15, 15, 93%),
+        rgba(11, 15, 15, 93%)
+      ),
+      url(../Assets/Pictures/tile-view-background.png);
+    background-size: 290px 470px;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 582px;
+    margin-bottom: 52px;
+
+    &__text {
+      margin: 0 auto;
+      padding-top: 174px;
+      width: 129px;
+    }
+
+    &__link {
+      border: solid 2px white;
+      font-size: 19px;
+      line-height: 19px;
+      padding: 13px 42px 10px 40px;
+      margin-top: 29px;
+      margin-bottom: 212px;
+    }
+
+    // "URBAN ANGELS"
+    &__title {
+      @include photo-text-title;
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+
+    // "by Kim Høltermand"
+    &__text--small {
+      @include photo-text-small;
+    }
+  }
+
+  .about {
+    background: url(../Assets/Pictures/tile-about-background.png), #d87979;
+    background-blend-mode: soft-light;
+    @include portal-background-position;
+
+    &__link {
+      padding-top: 97px;
+    }
+
+    &__text {
+      text-transform: capitalize;
+    }
+
+    &__text::before {
+      border-top: solid white 2px;
+      content: "border";
+      display: block;
+      font-size: 0px;
+      height: 0px;
+      margin: 17px auto 24px auto;
+      width: 75px;
+    }
+  }
+}

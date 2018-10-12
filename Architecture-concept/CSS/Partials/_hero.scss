@@ -1,9 +1,118 @@
+// ==========================================
+// title, crown house and luxembourg tiles
+// ==========================================
+
+@import "./mixins";
+
 .hero {
-  background: url(../Assets/Pictures/hero-background.png);
+  background: url(../Assets/Pictures/hero-background.png), white;
   background-position: top;
   background-repeat: no-repeat;
+  display: flex;
   height: 1156px;
   padding: 55px 78px 0 80px;
   position: relative;
   width: 1200px;
+
+  .hero__wrapper--left,
+  .hero__wrapper--right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 243px - 55px;
+  }
+
+  // left column of hero
+  .hero__wrapper--left {
+    width: 330px;
+
+    h1 {
+      @include photo-text-title;
+      margin-top: -2px;
+      margin-bottom: 254px;
+      font-size: 54px;
+      line-height: 64px;
+      width: 227px;
+    }
+
+    .wrapper--white {
+      background-color: white;
+      padding: 20px 20px 0 20px;
+    }
+
+    // crown house article
+    .hero__article {
+      background: url(../Assets/Pictures/hero-article-crown_house.png);
+      background-size: 290px 270px;
+      background-repeat: no-repeat;
+      text-align: center;
+
+      &__title {
+        @include photo-text-title;
+        padding-top: 312px;
+        line-height: 31px;
+      }
+
+      &__author {
+        @include photo-text-small;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  // right column of hero
+  .hero__wrapper--right {
+    background-color: white;
+    margin-left: 26px;
+    padding: 20px 20px 0 20px;
+
+    // lexumourg article
+    // holds bottom left and right text boxes
+    .hero__article {
+      background: url(../Assets/Pictures/hero-article-luxembourg_apartment.png);
+      background-size: 645px 889px;
+      display: flex;
+      padding-top: 710px;
+
+      // bottom left text box
+      .article__wrapper--left {
+        background-color: white;
+        width: 354px;
+        height: 183px;
+
+        .hero__article__title {
+          @include photo-text-title;
+          font-size: 36px;
+          line-height: 36px;
+          margin-bottom: 16px;
+
+          // span of the word "the"
+          &--the {
+            @include photo-text-small;
+            display: block;
+            margin-top: 27px;
+            margin-bottom: 17px;
+          }
+        }
+
+        .hero__article__author {
+          @include photo-text-small;
+        }
+      }
+
+      // bottom right text box
+      .article__wrapper--right {
+        background-color: rgba(11, 15, 15, 92%);
+        color: white;
+        height: 183px;
+        width: 290px;
+        padding: 28px 28px 0px 29px;
+
+        .hero__article__body {
+          font-size: 15px;
+          font-family: "SourceSansPro-Regular", serif;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 }
