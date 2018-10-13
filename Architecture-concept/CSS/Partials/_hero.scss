@@ -9,10 +9,10 @@
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
-  height: 1156px;
+  width: 1200px;
+  margin: 170px auto 0 auto;
   padding: 55px 78px 0 80px;
   position: relative;
-  width: 1200px;
 
   .hero__wrapper--left,
   .hero__wrapper--right {
@@ -55,6 +55,7 @@
       &__author {
         @include photo-text-small;
         margin-top: 16px;
+        color: #697473;
       }
     }
   }
@@ -77,7 +78,7 @@
       .article__wrapper--left {
         background-color: white;
         width: 354px;
-        height: 183px;
+        height: 180px;
 
         .hero__article__title {
           @include photo-text-title;
@@ -96,6 +97,7 @@
 
         .hero__article__author {
           @include photo-text-small;
+          color: #697473;
         }
       }
 
@@ -103,7 +105,7 @@
       .article__wrapper--right {
         background-color: rgba(11, 15, 15, 92%);
         color: white;
-        height: 183px;
+        height: 180px;
         width: 290px;
         padding: 28px 28px 0px 29px;
 

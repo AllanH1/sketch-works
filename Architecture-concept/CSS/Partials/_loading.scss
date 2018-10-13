@@ -1,0 +1,12 @@
+.loading {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 106px;
+  width: 1200px;
+
+  &__icon {
+    margin: 0 10px;
+  }
+}

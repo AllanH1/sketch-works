@@ -2,9 +2,9 @@
 @import "./Partials/nav";
 @import "./Partials/hero";
 @import "./Partials/main";
+@import "./Partials/loading";
+@import "./Partials/footer";
 
 body {
   background: url(../Assets/Pictures/page-background.png);
-  background-position: top;
-  padding: 170px 200px;
 }

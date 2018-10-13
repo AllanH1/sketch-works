@@ -15,12 +15,15 @@
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
+  letter-spacing: 0.5px;
 }
 
 // =================
 // ==== portals ====
 
 @mixin portal-link {
+  color: white;
+  text-decoration: none;
   font-family: "DPSDBeyond", serif;
   font-size: 36px;
   line-height: 36px;
@@ -28,7 +31,8 @@
 }
 
 @mixin portal-text {
-  font-family: "SourceSansPro-It", serif;
+  color: white;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-align: center;

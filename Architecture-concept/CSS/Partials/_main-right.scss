@@ -1,0 +1,108 @@
+// ==================================
+// photos and contact tiles
+// ==================================
+
+@import "./mixins";
+
+.content__right {
+  margin-left: 88px;
+
+  .tile__villa {
+    margin-top: 64px;
+    position: relative;
+
+    .tile__text {
+      background-color: white;
+      padding: 32px 66px 23px 0;
+      position: absolute;
+      top: 265px;
+
+      &__title {
+        @include photo-text-title;
+        display: block;
+      }
+
+      &__author {
+        @include photo-text-small;
+        display: block;
+        margin-top: 13px;
+      }
+    }
+  }
+
+  .content__right__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    height: 950px;
+
+    .content__right__tile {
+      width: 290px;
+    }
+
+    .science {
+      margin-top: 65px;
+
+      .tile__text {
+        &__title {
+          @include photo-text-title;
+          display: block;
+          margin-top: 35px;
+          margin-bottom: 17px;
+        }
+
+        &__author {
+          @include photo-text-small;
+        }
+      }
+    }
+
+    .contact {
+      background: url(../Assets/Pictures/tile-contact-background.png), #9ad4d2;
+      background-blend-mode: soft-light;
+      @include portal-background-position;
+      height: 290px;
+      margin-top: 67px;
+      margin-left: 62px;
+
+      &__link {
+        @include portal-link;
+        display: block;
+        margin-top: 97px;
+      }
+
+      &__text {
+        @include portal-text;
+        text-transform: capitalize;
+      }
+
+      &__text::before {
+        border-top: solid white 2px;
+        content: "border";
+        display: block;
+        font-size: 0px;
+        height: 0px;
+        margin: 17px auto 24px auto;
+        width: 75px;
+      }
+    }
+
+    .vi-sang {
+      margin-left: 62px;
+      margin-top: 61px;
+      .tile__text {
+        &__title {
+          @include photo-text-title;
+          display: block;
+          margin-top: 33px;
+          margin-bottom: 18px;
+        }
+
+        &__author {
+          @include photo-text-small;
+        }
+      }
+    }
+  }
+}

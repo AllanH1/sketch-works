@@ -95,11 +95,13 @@
     @include portal-background-position;
 
     &__link {
-      padding-top: 97px;
+      margin-top: 97px;
     }
 
     &__text {
       text-transform: capitalize;
+      font-family: "AUdimat-Italic", serif;
+      font-weight: normal;
     }
 
     &__text::before {

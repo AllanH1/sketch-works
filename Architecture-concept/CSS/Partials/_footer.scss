@@ -1,0 +1,30 @@
+.footer {
+  background-color: white;
+  margin: 0 auto 171px auto;
+  width: 1200px;
+  &__nav {
+    align-items: center;
+    border-top: solid 2px #f6f6f6;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 54px;
+    padding-left: 63px;
+    width: 1040px;
+
+    &__item {
+      color: #414a49;
+      font-family: "Source Sans Pro", serif;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 36px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &__icon {
+      font-size: 0px;
+      margin-left: 666px;
+    }
+  }
+}
