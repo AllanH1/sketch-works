@@ -36,6 +36,7 @@
 
     .wrapper--white {
       background-color: white;
+      margin-right: -1px;
       padding: 20px 20px 0 20px;
     }
 
@@ -77,8 +78,9 @@
       // bottom left text box
       .article__wrapper--left {
         background-color: white;
-        width: 354px;
         height: 180px;
+        margin-left: -1px;
+        width: 354px;
 
         .hero__article__title {
           @include photo-text-title;

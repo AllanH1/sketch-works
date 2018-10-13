@@ -145,7 +145,7 @@ table {
   position: absolute;
   display: flex;
   top: 224px;
-  left: 205px;
+  left: 13.5%;
   width: 1042px;
   height: 56px;
 }
@@ -215,6 +215,7 @@ table {
 }
 .hero .hero__wrapper--left .wrapper--white {
   background-color: white;
+  margin-right: -1px;
   padding: 20px 20px 0 20px;
 }
 .hero .hero__wrapper--left .hero__article {
@@ -255,8 +256,9 @@ table {
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left {
   background-color: white;
-  width: 354px;
   height: 180px;
+  margin-left: -1px;
+  width: 354px;
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__title {
   color: #242e2d;
@@ -537,7 +539,7 @@ table {
   padding: 0 78px 0 80px;
   background-color: white;
   display: flex;
-  margin: 0 auto;
+  margin: -1px auto 0 auto;
   width: 1200px;
 }
 
@@ -545,7 +547,7 @@ table {
   background-color: white;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: -1px auto 0 auto;
   padding-bottom: 106px;
   width: 1200px;
 }
@@ -555,7 +557,7 @@ table {
 
 .footer {
   background-color: white;
-  margin: 0 auto 171px auto;
+  margin: -1px auto 171px auto;
   width: 1200px;
 }
 .footer__nav {
