@@ -235,7 +235,7 @@ table {
 }
 .hero .hero__wrapper--left .hero__article__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -272,7 +272,7 @@ table {
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__title--the {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -283,7 +283,7 @@ table {
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -384,7 +384,7 @@ table {
 }
 .content__left .view__text--small {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -402,7 +402,7 @@ table {
 .content__left .about__text {
   text-transform: capitalize;
   font-family: "AUdimat-Italic", serif;
-  font-weight: normal;
+  line-height: 22px;
 }
 .content__left .about__text::before {
   border-top: solid white 2px;
@@ -437,7 +437,7 @@ table {
 }
 .content__right .tile__villa .tile__text__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -470,7 +470,7 @@ table {
 }
 .content__right .content__right__wrapper .science .tile__text__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -528,7 +528,7 @@ table {
 }
 .content__right .content__right__wrapper .vi-sang .tile__text__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-It", serif;
+  font-family: "SourceSansPro-LightIt", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -549,6 +549,7 @@ table {
   justify-content: center;
   margin: -1px auto 0 auto;
   padding-bottom: 106px;
+  padding-top: 50px;
   width: 1200px;
 }
 .loading__icon {
