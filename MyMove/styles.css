@@ -1,0 +1,889 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: RVMontserrat Light;
+  src: url(assets/fonts/rv-montserrat-light.ttf);
+}
+@font-face {
+  font-family: RVMontserrat Regular;
+  src: url(assets/fonts/rv-montserrat-regular.ttf);
+}
+@font-face {
+  font-family: RVMontserrat Semi bold;
+  src: url(assets/fonts/rv-montserrat-semibold.ttf);
+}
+@font-face {
+  font-family: RVMontserrat Bold;
+  src: url(assets/fonts/rv-montserrat-bold.ttf);
+}
+@font-face {
+  font-family: Source Serif Pro Regular;
+  src: url(assets/fonts/SourceSerifPro-Regular.ttf);
+}
+.hero {
+  color: white;
+  text-align: center;
+}
+.hero__heading {
+  color: #fdd835;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 39px;
+  font-family: "RVMontserrat Regular", serif;
+  letter-spacing: 3px;
+}
+.hero__subheading {
+  font-size: 54px;
+  margin-top: 24px;
+  margin-bottom: 33px;
+  font-family: "RVMontserrat Bold", serif;
+}
+.hero__text {
+  font-size: 16px;
+  font-family: Georgia, serif;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+}
+
+.hero--background {
+  background-image: url(assets/heroBackground.png);
+  background-color: #3949ab;
+  height: 419px;
+  width: 1440px;
+  position: absolute;
+}
+
+.navigation {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  height: 90px;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.navigation__list--margin {
+  margin-right: 40px;
+}
+.navigation__list__item {
+  font-size: 12px;
+  letter-spacing: 0.86px;
+  text-align: center;
+  line-height: 56px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "RVMontserrat Regular", serif;
+  position: relative;
+}
+.navigation__hotdog-icon {
+  display: inline-block;
+  margin: 6px 0px 0px -20px;
+  font-size: 0px;
+}
+.navigation__hotdog-icon--size {
+  width: 49px;
+}
+.navigation__logo {
+  display: inline-block;
+  margin-right: 460px;
+  margin-left: 38px;
+  font-size: 0px;
+}
+.navigation__logo--size {
+  width: 152px;
+}
+.navigation__list:hover .navigation__list__item {
+  opacity: 0.5;
+}
+.navigation__list:hover .navigation__list__item:hover {
+  opacity: 1;
+}
+.navigation__list__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s;
+  top: 22px;
+}
+.navigation__list__item:hover::after {
+  width: 100%;
+}
+
+.wrapper {
+  padding-top: 461px;
+}
+
+.article-nav {
+  display: flex;
+  height: 48px;
+  text-transform: uppercase;
+  margin-left: 160px;
+  font-size: 13px;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 1190px;
+  margin-right: 0px;
+}
+.article-nav__item {
+  text-decoration: none;
+  color: #545454;
+  font-family: "RVMontserrat Regular", serif;
+  letter-spacing: 0.75px;
+  margin-right: 42px;
+}
+.article-nav--selected {
+  color: #303f9f;
+  border-bottom: solid 3px #303f9f;
+  padding: 0px 12px 6px 4px;
+  font-family: "RVMontserrat Bold", serif;
+}
+.article-nav__item--margin {
+  margin-right: 193px;
+}
+.article-nav__item--button {
+  background-color: #536dfe;
+  padding: 17px 42px;
+  color: white;
+  letter-spacing: 0.24px;
+  font-family: "RVMontserrat Semi Bold", serif;
+  margin-left: -100px;
+  border: solid 1px #536dfe;
+}
+.article-nav__item--button:hover {
+  background-color: white;
+  color: #536dfe;
+}
+.article-nav:hover .article-nav__item--hover {
+  opacity: 0.5;
+}
+.article-nav:hover .article-nav__item--button {
+  opacity: 1;
+}
+.article-nav:hover .article-nav__item--hover:hover {
+  opacity: 1;
+  color: #303f9f;
+}
+.article-nav__item--hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #303f9f;
+  transition: width 0.3s;
+  top: 22px;
+}
+.article-nav__item--hover:hover::after {
+  width: 100%;
+}
+.article-nav__item--hover {
+  position: relative;
+}
+
+.featured {
+  margin: auto;
+  width: 1170px;
+  display: flex;
+  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+}
+.featured__img {
+  margin: 30px 49px 29px 30px;
+  width: 441px;
+  height: 441px;
+}
+.featured__text {
+  padding-right: 42px;
+}
+.featured__text__label {
+  border: solid 1px #3949ab;
+  border-radius: 100px;
+  color: #3949ab;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 20px 5px 20px;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  font-family: "RVMontserrat Regular", serif;
+}
+.featured__text__label:hover {
+  color: white;
+  background-color: #3949ab;
+}
+.featured__text__title {
+  color: #424242;
+  font-size: 42px;
+  margin-bottom: 45px;
+  line-height: 50px;
+  display: inline-block;
+  font-family: "RVMontserrat Bold", serif;
+  text-decoration: none;
+}
+.featured__text__body {
+  font-size: 18px;
+  padding-bottom: 43px;
+  border-bottom: solid 1px #eeeeee;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-family: georgia, serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+.featured__text__logo {
+  float: left;
+  margin-right: 12px;
+  width: 36px;
+}
+.featured__text__author {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 12px;
+  margin-top: 24px;
+  font-family: "RVMontserrat Bold", serif;
+  letter-spacing: 0.86px;
+}
+.featured__text__date {
+  color: #757575;
+  font-size: 12px;
+  font-family: "RVMontserrat Regular", serif;
+}
+
+.article-wrapper {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.article {
+  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+  width: 370px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.article a {
+  text-decoration: none;
+  color: inherit;
+}
+.article__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
+}
+.article__title {
+  font-size: 26px;
+  margin: 0px 31px 10px 30px;
+  line-height: 34px;
+  font-family: "RVMontserrat Bold", serif;
+  color: #424242;
+}
+.article__body {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0px 22px 41px 30px;
+  font-family: Georgia, serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+.article__label {
+  border: solid 1px #3949ab;
+  border-radius: 100px;
+  color: #3949ab;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 20px 5px 20px;
+  display: inline-block;
+  margin: 30px 0px 16px 30px;
+  font-family: "RVMontserrat Regular", serif;
+}
+.article__label:hover {
+  color: white;
+  background-color: #3949ab;
+}
+.article__bottom-border {
+  border-top: solid 1px #eeeeee;
+}
+.article__logo {
+  float: left;
+  padding-top: 15px;
+  margin: 0px 14px 17px 31px;
+  width: 36px;
+}
+.article__author {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 12px;
+  font-family: "RVMontserrat Bold", serif;
+  letter-spacing: 0.86px;
+  padding-top: 20px;
+}
+.article__date {
+  color: #757575;
+  font-size: 12px;
+  font-family: "RVMontserrat Regular", serif;
+  letter-spacing: 0.86px;
+}
+
+.article-two__body {
+  margin-bottom: 26px;
+}
+
+.article-three__body {
+  margin-bottom: 56px;
+}
+
+.article-four__title {
+  margin-bottom: 40px;
+}
+
+.article-five__body {
+  margin-bottom: 26px;
+}
+
+.article-six__body {
+  margin-bottom: 26px;
+}
+
+.load-more {
+  margin-top: 76px;
+  margin-bottom: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1171px;
+}
+.load-more--border {
+  border-bottom: solid 1px #d8d8d8;
+  width: 401px;
+}
+.load-more--border {
+  border-bottom: solid 1px #d8d8d8;
+  width: 401px;
+}
+.load-more--button {
+  background-color: #536dfe;
+  padding: 17px 42px;
+  color: white;
+  letter-spacing: 0.24px;
+  font-family: "RVMontserrat Semi Bold", serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #536dfe;
+}
+.load-more--button:hover {
+  background-color: white;
+  color: #536dfe;
+}
+
+.footer {
+  width: 100%;
+  background-color: #3949ab;
+  padding-bottom: 25px;
+  padding-top: 75px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer .wrapper {
+  display: flex;
+  margin-bottom: 35px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px 0px 100px;
+}
+.footer__nav__item {
+  display: inline-block;
+  font-family: "RVMontserrat Regular", serif;
+  letter-spacing: 1.14px;
+  line-height: 33px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.footer__nav:hover .footer__nav__item {
+  opacity: 0.5;
+}
+.footer__nav:hover .footer__nav__item:hover {
+  opacity: 1;
+}
+.footer__nav__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s;
+  top: 32px;
+}
+.footer__nav__item:hover::after {
+  width: 100%;
+}
+.footer__logo {
+  height: 63.88px;
+  width: 64.42px;
+  margin-right: -930px;
+  font-size: 0px;
+}
+.footer__logo--size {
+  width: 64.42px;
+  height: 63.88px;
+}
+.footer__social__link {
+  display: inline-block;
+  font-size: 0px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.footer__social__link--size {
+  width: 40px;
+}
+.footer__social:hover .footer__social__link {
+  opacity: 0.5;
+}
+.footer__social:hover .footer__social__link:hover {
+  opacity: 1;
+}
+.footer__legal {
+  display: flex;
+  justify-content: center;
+}
+.footer__legal__item {
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-right: solid 1px white;
+  font-family: "RVMontserrat Light", serif;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+.footer__legal__item--border {
+  border-right: none;
+  padding-right: none;
+}
+.footer__legal:hover .footer__legal__item {
+  opacity: 0.5;
+}
+.footer__legal:hover .footer__legal__item:hover {
+  opacity: 1;
+}
+
+.page-two .navigation {
+  background: linear-gradient(to right, #3f51b5, #283593);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 60px;
+}
+.page-two .navigation__list {
+  margin-top: 0px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 338px;
+  text-transform: uppercase;
+  letter-spacing: 0.86px;
+  font-size: 12px;
+  font-family: "RVMontserrat Semi Bold", serif;
+}
+.breadcrumbs:hover .breadcrumbs--hover {
+  opacity: 0.5;
+}
+.breadcrumbs:hover .breadcrumbs--hover:hover {
+  opacity: 1;
+}
+.breadcrumbs__link {
+  text-decoration: none;
+  margin-right: 8px;
+  color: #303f9f;
+  position: relative;
+}
+.breadcrumbs__link__arrow {
+  color: #424242;
+  margin-left: 8px;
+}
+.breadcrumbs__current {
+  color: #424242;
+}
+.breadcrumbs__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #303f9f;
+  transition: width 0.3s;
+  top: 15px;
+}
+.breadcrumbs__link:hover::after {
+  width: 100%;
+}
+
+.landing {
+  margin-top: 25px;
+  margin-left: 338px;
+  position: relative;
+}
+.landing__heading {
+  color: #424242;
+  font-family: "RVMontserrat Bold", serif;
+  font-size: 42px;
+  line-height: 48px;
+  width: 776px;
+  margin-bottom: 24px;
+}
+.landing__logo {
+  margin-left: 0px;
+}
+.landing__img {
+  position: absolute;
+  margin-top: 70px;
+  right: 236px;
+  width: 968px;
+}
+
+.contents {
+  margin-top: 502px;
+  margin-left: 236px;
+}
+.contents__heading {
+  font-family: "RVMontserrat Bold", serif;
+  font-size: 30px;
+  line-height: 32px;
+  color: #424242;
+  margin-bottom: 30px;
+}
+.contents__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1000px;
+  height: 400px;
+}
+.contents__list__items {
+  display: inline-block;
+  text-decoration: none;
+  color: #3949ab;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Source Serif Pro Regular", serif;
+  margin-bottom: 15px;
+}
+.contents__border-bottom {
+  border-bottom: solid #eeeeee 3px;
+  width: 931px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.main {
+  margin-left: 332px;
+}
+.main__heading {
+  font-family: Tahoma, serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #424242;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.main__heading--margin {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.main__subheading {
+  margin-bottom: 30px;
+  font-family: "Tahoma", serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: #757575;
+}
+.main__body {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 33px;
+  width: 670px;
+  opacity: 0.8;
+}
+.main__body--italics {
+  font-style: italic;
+}
+.main__body--underline {
+  text-decoration: underline;
+}
+.main__body--link {
+  text-decoration: none;
+  color: #3949ab;
+}
+.main__body--quote {
+  width: 630px;
+  margin: 40px 0px 40px 20px;
+  line-height: 40px;
+  font-style: italic;
+  font-size: 28px;
+  color: #757575;
+  opacity: 1;
+}
+.main__footer {
+  font-family: Georgia, serif;
+  color: #424242;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+  width: 670px;
+  border-top: solid 3px #eeeeee;
+  margin-top: 60px;
+  padding-top: 30px;
+}
+.main__footer--bluebold {
+  color: #3949ab;
+  font-weight: bold;
+}
+
+.table-radius {
+  height: 57px;
+  width: 150px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: solid 1px #bdbdbd;
+  border-left: solid 1px #bdbdbd;
+  border-top-left-radius: 3px;
+}
+
+.table-radius--right {
+  width: 210px;
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-right: solid 1px #bdbdbd;
+  border-top-right-radius: 3px;
+}
+
+.table {
+  margin-top: 75px;
+}
+.table__caption {
+  text-align: left;
+  margin-bottom: 40px;
+  font-family: Tahoma, serif;
+  font-size: 30px;
+  color: #424242;
+  line-height: 32px;
+  font-weight: bold;
+}
+.table__head--header {
+  background-color: #f5f5f5;
+}
+.table__head__item {
+  font-family: "Tahoma", serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  padding: 16px 7px 16px 35px;
+  position: relative;
+}
+.table__head__item--border {
+  border-top: solid 1px #bdbdbd;
+}
+.table__head__item--padding {
+  padding-right: 70px;
+}
+.table__data {
+  font-family: "Tahoma", serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  border: solid 1px #cccccc;
+  padding: 16px 35px 16px 35px;
+}
+
+.figure {
+  width: 670px;
+}
+.figure__img {
+  width: 670px;
+  height: 446.67px;
+  margin-top: 60px;
+}
+.figure__caption {
+  margin-top: 9.33px;
+  margin-bottom: 60px;
+  font-family: "Tahoma", serif;
+  color: #757575;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.list {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  opacity: 0.8;
+  line-height: 40px;
+  margin: 30px 0px 30px 30px;
+  list-style: initial;
+}
+.list__item {
+  padding-left: 5px;
+}
+
+.related {
+  margin-bottom: 100px;
+}
+.related__heading {
+  font-family: "RVmontserrat Bold", serif;
+  font-size: 24px;
+  color: #424242;
+  margin-top: 60px;
+  margin-left: 135px;
+  line-height: 32px;
+}
+
+/*# sourceMappingURL=styles.css.map */
