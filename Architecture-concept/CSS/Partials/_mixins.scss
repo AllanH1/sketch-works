@@ -1,9 +1,11 @@
 // =====================
 // ==== photo tiles ====
 
+@import "./fonts";
+
 @mixin photo-text-title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -11,7 +13,7 @@
 
 @mixin photo-text-small {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -24,7 +26,7 @@
 @mixin portal-link {
   color: white;
   text-decoration: none;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;

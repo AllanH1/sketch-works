@@ -182,6 +182,18 @@ table {
   width: 16px;
 }
 
+@font-face {
+  font-family: "SourceSansProLightItalic";
+  src: url("../Assets/Fonts/SourceSansPro-LightIt.otf");
+}
+@font-face {
+  font-family: "DPSDbeyond";
+  src: url("../Assets/Fonts/DPSDbeyond.otf");
+}
+@font-face {
+  font-family: "AUdimatItalic";
+  src: url("../Assets/Fonts/AudimatItalic.ttf");
+}
 .hero {
   background: url(../Assets/Pictures/hero-background.png), white;
   background-position: top;
@@ -203,7 +215,7 @@ table {
 }
 .hero .hero__wrapper--left h1 {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -226,7 +238,7 @@ table {
 }
 .hero .hero__wrapper--left .hero__article__title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -235,7 +247,7 @@ table {
 }
 .hero .hero__wrapper--left .hero__article__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -262,7 +274,7 @@ table {
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -272,7 +284,7 @@ table {
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__title--the {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -283,7 +295,7 @@ table {
 }
 .hero .hero__wrapper--right .hero__article .article__wrapper--left .hero__article__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -303,6 +315,30 @@ table {
   line-height: 24px;
 }
 
+@font-face {
+  font-family: "SourceSansProLightItalic";
+  src: url("../Assets/Fonts/SourceSansPro-LightIt.otf");
+}
+@font-face {
+  font-family: "DPSDbeyond";
+  src: url("../Assets/Fonts/DPSDbeyond.otf");
+}
+@font-face {
+  font-family: "AUdimatItalic";
+  src: url("../Assets/Fonts/AudimatItalic.ttf");
+}
+@font-face {
+  font-family: "SourceSansProLightItalic";
+  src: url("../Assets/Fonts/SourceSansPro-LightIt.otf");
+}
+@font-face {
+  font-family: "DPSDbeyond";
+  src: url("../Assets/Fonts/DPSDbeyond.otf");
+}
+@font-face {
+  font-family: "AUdimatItalic";
+  src: url("../Assets/Fonts/AudimatItalic.ttf");
+}
 .content__left {
   color: white;
   padding: 0px 20px 0px 20px;
@@ -324,7 +360,7 @@ table {
 .content__left .content__tile__portal__link {
   color: white;
   text-decoration: none;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -375,7 +411,7 @@ table {
 }
 .content__left .view__title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -384,7 +420,7 @@ table {
 }
 .content__left .view__text--small {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -401,7 +437,7 @@ table {
 }
 .content__left .about__text {
   text-transform: capitalize;
-  font-family: "AUdimat-Italic", serif;
+  font-family: "AUdimatItalic", serif;
   line-height: 22px;
 }
 .content__left .about__text::before {
@@ -414,6 +450,18 @@ table {
   width: 75px;
 }
 
+@font-face {
+  font-family: "SourceSansProLightItalic";
+  src: url("../Assets/Fonts/SourceSansPro-LightIt.otf");
+}
+@font-face {
+  font-family: "DPSDbeyond";
+  src: url("../Assets/Fonts/DPSDbeyond.otf");
+}
+@font-face {
+  font-family: "AUdimatItalic";
+  src: url("../Assets/Fonts/AudimatItalic.ttf");
+}
 .content__right {
   margin-left: 88px;
 }
@@ -429,7 +477,7 @@ table {
 }
 .content__right .tile__villa .tile__text__title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -437,7 +485,7 @@ table {
 }
 .content__right .tile__villa .tile__text__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -460,7 +508,7 @@ table {
 }
 .content__right .content__right__wrapper .science .tile__text__title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -470,7 +518,7 @@ table {
 }
 .content__right .content__right__wrapper .science .tile__text__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;
@@ -488,7 +536,7 @@ table {
 .content__right .content__right__wrapper .contact__link {
   color: white;
   text-decoration: none;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -518,7 +566,7 @@ table {
 }
 .content__right .content__right__wrapper .vi-sang .tile__text__title {
   color: #242e2d;
-  font-family: "DPSDBeyond", serif;
+  font-family: "DPSDbeyond", serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -528,7 +576,7 @@ table {
 }
 .content__right .content__right__wrapper .vi-sang .tile__text__author {
   color: #9b9b9b;
-  font-family: "SourceSansPro-LightIt", serif;
+  font-family: "SourceSansProLightItalic", serif;
   font-size: 18px;
   line-height: 23px;
   text-transform: none;

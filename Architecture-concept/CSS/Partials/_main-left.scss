@@ -3,6 +3,7 @@
 // ==================================
 
 @import "./mixins";
+@import "./fonts";
 
 .content__left {
   color: white;
@@ -100,7 +101,7 @@
 
     &__text {
       text-transform: capitalize;
-      font-family: "AUdimat-Italic", serif;
+      font-family: "AUdimatItalic", serif;
       line-height: 22px;
     }
 
