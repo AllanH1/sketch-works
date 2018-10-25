@@ -1,0 +1,31 @@
+.footer-nav {
+  align-items: center;
+  background-color: #f1f0f3;
+  display: flex;
+  height: 154px;
+
+  &__item {
+    &__link {
+      color: #9394a1;
+      font-family: "SourceSansPro", serif;
+      font-size: 16px;
+      margin-right: 26px;
+    }
+
+    &__link--copyright {
+      font-family: "UniSansHeavy", serif;
+      margin-left: 116px;
+      margin-right: 212px;
+      text-decoration: none;
+    }
+
+    &__link--icon {
+      font-size: 0px;
+      margin-right: 10px;
+    }
+  }
+
+  &__item:nth-child(5) {
+    margin-right: 225px;
+  }
+}

@@ -1,0 +1,83 @@
+.featured-one {
+  display: flex;
+  justify-content: center;
+  @include center;
+  margin-top: 44px;
+  width: 900px;
+
+  // all panels
+  &__panel {
+    color: white;
+    font-family: "UniSansHeavyItalic", serif;
+    width: 300px;
+
+    &__text {
+      @include center;
+      display: block;
+      font-size: 36px;
+      letter-spacing: 6px;
+      line-height: 43px;
+      margin-top: 268.5px;
+      text-align: center;
+      width: 203px;
+    }
+
+    &__img {
+      @include center;
+      display: block;
+      margin-bottom: 26px;
+      margin-top: 10.5px;
+    }
+  }
+
+  &__panel-one {
+    background-image: url("../pictures/featured-one-freedom-background.png");
+  }
+
+  &__panel-two {
+    background-image: url("../pictures/featured-one-cruiser-background.png");
+
+    &__price {
+      color: #ba7281;
+      display: block;
+      font-family: "UniSansHeavy", serif;
+      font-size: 24px;
+      line-height: 29px;
+      margin-left: 17px;
+      margin-top: 17px;
+    }
+
+    &__button {
+      @include center;
+      background-color: #22d1ad;
+      border-radius: 50%;
+      border: none;
+      display: block;
+      height: 120px;
+      margin-top: 204px;
+      padding: 32px 18px 44px 18px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      width: 120px;
+
+      &__text {
+        color: white;
+        font-family: "UniSansHeavy", serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 22px;
+      }
+
+      img {
+        @include center;
+        display: block;
+        margin-top: 10.5px;
+      }
+    }
+  }
+
+  &__panel-three {
+    background-image: url("../pictures/featured-one-lifestyle-background.png");
+  }
+}

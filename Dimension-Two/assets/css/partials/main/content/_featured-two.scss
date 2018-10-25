@@ -1,0 +1,32 @@
+.featured-two {
+  @include center;
+  color: white;
+  background-image: url("../pictures/featured-two-background.png");
+  margin-top: 91px;
+  padding-left: 32.5px;
+  width: 900px;
+
+  &__top-text {
+    font-family: "SourceSansPro", serif;
+    font-size: 18px;
+    padding-top: 59.5px;
+  }
+
+  &__title {
+    font-family: "UniSansHeavy", serif;
+    font-size: 48px;
+    letter-spacing: 8px;
+    line-height: 58px;
+    margin-top: 19.5px;
+    width: 116px;
+  }
+
+  &__button {
+    @include button-rectangle;
+    background-color: #049294;
+    color: inherit;
+    margin-top: 13px;
+    margin-bottom: 81px;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,34 @@
+.logo-mural {
+  @include center;
+  text-align: center;
+  width: 900px;
+
+  &__wave {
+    margin: 72px 0px;
+  }
+
+  &__panels {
+    display: flex;
+
+    &__panel {
+      height: 335px;
+      width: 225px;
+    }
+
+    &__panel-d {
+      background-image: url("../pictures/logo-mural-d-background.png");
+    }
+
+    &__panel-t {
+      background-image: url("../pictures/logo-mural-t-background.png");
+    }
+
+    &__panel-w {
+      background-image: url("../pictures/logo-mural-w-background.png");
+    }
+
+    &__panel-o {
+      background-image: url("../pictures/logo-mural-o-background.png");
+    }
+  }
+}

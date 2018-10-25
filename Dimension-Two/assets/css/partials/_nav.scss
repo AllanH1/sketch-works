@@ -1,0 +1,32 @@
+@import "./mixins";
+
+.nav__container {
+  @include center;
+  position: relative;
+  width: 1140px;
+  .nav {
+    background: linear-gradient(
+      rgba(127, 194, 222, 0.3),
+      rgba(127, 194, 222, 0)
+    );
+    display: flex;
+    height: 95px;
+    padding-top: 27px;
+    position: absolute;
+    width: 100%;
+
+    &__item {
+      color: white;
+      font-family: "UniSansHeavy", serif;
+      text-decoration: none;
+      text-transform: capitalize;
+      margin-left: 34.5px;
+    }
+
+    &__item--logo {
+      margin-right: 470px;
+      margin-left: 120px;
+      font-size: 0px;
+    }
+  }
+}

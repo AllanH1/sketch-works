@@ -1,0 +1,9 @@
+@import "./content/featured-one";
+@import "./content/about";
+@import "./content/featured-two";
+@import "./content/logo-mural";
+
+.content {
+  @include center;
+  width: 1140px;
+}
