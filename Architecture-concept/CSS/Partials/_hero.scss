@@ -6,6 +6,8 @@
 
 .hero {
   background: url(../Assets/Pictures/hero-background.png), white;
+  //   background-attachment: fixed;
+  //   background-position: center 170px;
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
@@ -49,7 +51,7 @@
 
       &__title {
         @include photo-text-title;
-        padding-top: 312px;
+        padding-top: 40px;
         line-height: 31px;
       }
 
@@ -57,6 +59,14 @@
         @include photo-text-small;
         margin-top: 16px;
         color: #697473;
+      }
+
+      &__hover {
+        height: 270px;
+
+        &__text {
+          padding-top: 70px;
+        }
       }
     }
   }

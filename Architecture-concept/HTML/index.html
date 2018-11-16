@@ -1,195 +1,268 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Archent West Group</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/styles.css" />
-    <!-- <script src="main.js"></script> -->
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../CSS/styles.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <ul class="nav">
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="" class="nav__link">
+              <span class="nav__link__text">open menu</span>
+              <img
+                class="nav__link__icon--hotcakes"
+                src="../Assets/Icons/nav-hotcakes.png"
+                alt="open menu"
+              />
+            </a>
+          </li>
 
-                <li>
-                    <a href="" class="nav__link">
-                        <span class="nav__link__text">open menu</span>
-                        <img class="nav__link__icon--hotcakes" src="../Assets/Icons/nav-hotcakes.png" alt="open menu" />
-                    </a>
-                </li>
+          <li>
+            <a href="" class="nav__link">
+              <span class="nav__link__text">back to main page</span>
+              <img
+                class="nav__link__icon--logo"
+                src="../Assets/Icons/page-logo.png"
+                alt="company logo"
+              />
+            </a>
+          </li>
 
-                <li>
-                    <a href="" class="nav__link">
-                        <span class="nav__link__text">back to main page</span>
-                        <img class="nav__link__icon--logo" src="../Assets/Icons/page-logo.png" alt="company logo" />
-                    </a>
-                </li>
+          <div class="search-container">
+            <input type="text" class="search-container__input" />
+            <li>
+              <a href="" class="nav__link">
+                <span class="nav__link__text--search">search</span>
+              </a>
+            </li>
 
-                <!-- will eventually be an input field for searching, with the submit button being the icon -->
-                <li>
-                    <a href="" class="nav__link">
-                        <span class="nav__link__text--search">search</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="nav__link">
-                        <img class="nav__link__icon--search" src="../Assets/Icons/nav-search.png" alt="search" />
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
+            <li>
+              <a href="" class="nav__link">
+                <img
+                  id="test"
+                  class="nav__link__icon--search"
+                  src="../Assets/Icons/nav-search.png"
+                  alt="search"
+                />
+              </a>
+            </li>
+            <i class="fas fa-times search-container__close-icon"
+              ><span class="search-container__close-icon__text"
+                >close search bar</span
+              ></i
+            >
+          </div>
+        </ul>
+      </nav>
     </header>
 
-    <!-- contains h1, crown house(left) and luxembourg(right) -->
-    <!-- CHANGE THESE TO FIGURES, THEY ARE NOT ARTICLES -->
-    <!-- CHANGE THESE TO FIGURES, THEY ARE NOT ARTICLES -->
-    <!-- CHANGE THESE TO FIGURES, THEY ARE NOT ARTICLES -->
     <section class="hero">
-
-        <div class="hero__wrapper--left">
-            <h1 class="hero__title">archent west group</h1>
-            <div class="wrapper--white">
-                <article class="hero__article">
-                    <h2 class="hero__article__title">crown house</h2>
-                    <p class="hero__article__author">by 81.WAW.PL</p>
-                </article>
+      <div class="hero__wrapper--left">
+        <h1 class="hero__title">archent west group</h1>
+        <div class="wrapper--white">
+          <article class="hero__article">
+            <div class="content__tile__hover hero__article__hover">
+              <p class="content__tile__hover__text hero__article__hover__text">
+                More photos from this collection
+              </p>
+              <a
+                class="content__tile__hover__link hero__article__hover__link"
+                href=""
+                >view</a
+              >
             </div>
+            <h2 class="hero__article__title">crown house</h2>
+            <p class="hero__article__author">by 81.WAW.PL</p>
+          </article>
         </div>
+      </div>
 
-        <div class="hero__wrapper--right">
-            <article class="hero__article">
-                <div class="article__wrapper--left">
-                    <h2 class="hero__article__title">
-                        <span class="hero__article__title--the">The</span> luxembourg apartment</h2>
-                    <p class="hero__article__author">by Metaform atelier d'architecture</p>
-                </div>
-                <div class="article__wrapper--right">
-                    <p class="hero__article__body">While much of the interior of the Luxembourg Apartment is covered in art by local artist SUMO, the windows
-                        of the building are adorned with sliding metal screens.</p>
-                </div>
-            </article>
-        </div>
-
+      <div class="hero__wrapper--right">
+        <article class="hero__article">
+          <div class="article__wrapper--left">
+            <h2 class="hero__article__title">
+              <span class="hero__article__title--the">The</span> luxembourg
+              apartment
+            </h2>
+            <p class="hero__article__author">
+              by Metaform atelier d'architecture
+            </p>
+          </div>
+          <div class="article__wrapper--right">
+            <p class="hero__article__body">
+              While much of the interior of the Luxembourg Apartment is covered
+              in art by local artist SUMO, the windows of the building are
+              adorned with sliding metal screens.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <main class="content">
+      <!-- news, view, and about tiles -->
+      <div class="content__left">
+        <section class="content__tile__portal news">
+          <p class="content__tile__portal__text news__text">our latest</p>
+          <a class="content__tile__portal__link news__link" href="">news</a>
+        </section>
 
-        <!-- news, view, and about tiles -->
-        <div class="content__left">
+        <section class="content__tile__portal view">
+          <div class="content__tile__hover">
+            <p class="content__tile__hover__text view__text">
+              More photos from this collection
+            </p>
+            <a class="content__tile__hover__link view__link" href="">view</a>
+          </div>
+          <h2 class="content__tile__title view__title">urban angels</h2>
+          <p class="content__tile__text--small view__text--small">
+            by Kim Høltermand
+          </p>
+        </section>
 
-            <section class="content__tile__portal news">
-                <p class="content__tile__portal__text news__text">our latest</p>
-                <a class="content__tile__portal__link news__link" href="">news</a>
-            </section>
+        <section class="content__tile__portal about">
+          <a class="content__tile__portal__link about__link" href="">about</a>
+          <p class="content__tile__portal__text about__text">
+            archent west group
+          </p>
+        </section>
+      </div>
 
-            <section class="content__tile__portal view">
-                <p class="content__tile__portal__text view__text">More photos from this collection</p>
-                <a class="content__tile__portal__link view__link" href="">view</a>
-                <h2 class="content__tile__title view__title">urban angels</h2>
-                <p class="content__tile__text--small view__text--small">by Kim Høltermand</p>
-            </section>
+      <!-- pictures and contact tile -->
+      <div class="content__right">
+        <!-- villa extramorus -->
+        <figure class="tile__villa">
+          <img
+            class="tile__villa__img"
+            src="../Assets/Pictures/tile-villa_extramorus-photo.png"
+            alt="a house with a very square shaped design, lots of sharp 90 degree angles and some green foilage to break up the white, brown and red color scheme"
+          />
+          <figcaption class="tile__text">
+            <h2 class="tile__text__title">villa extramorus</h2>
+            <span class="tile__text__author">by Adrià Goula</span>
+          </figcaption>
+          <div class="content__tile__hover tile__villa__hover">
+            <p class="content__tile__hover__text tile__villa__hover__text">
+              More photos from this collection
+            </p>
+            <a
+              class="content__tile__hover__link tile__villa__hover__link"
+              href=""
+              >view</a
+            >
+          </div>
+        </figure>
 
-            <section class="content__tile__portal about">
-                <a class="content__tile__portal__link about__link" href="">about</a>
-                <p class="content__tile__portal__text about__text">archent west group</p>
-            </section>
-
-        </div>
-
-        <!-- pictures and contact tile -->
-        <div class="content__right">
-
-            <!-- villa extramorus -->
-            <figure class="tile__villa">
-                <img class="tile__villa__img" src="../Assets/Pictures/tile-villa_extramorus-photo.png" alt="a house with a very square shaped design, lots of sharp 90 degree angles and some green foilage to break up the white, brown and red color scheme"
-                />
-                <figcaption class="tile__text">
-                    <h2 class="tile__text__title">villa extramorus</h2>
-                    <span class="tile__text__author">by Adrià Goula</span>
-                </figcaption>
+        <!-- science, contact, vi-sang -->
+        <div class="content__right__wrapper">
+          <section class="content__right__tile science">
+            <figure class="content__right__tile ">
+              <img
+                src="../Assets/Pictures/tile-science_faculty-photo.png"
+                alt="a long building with the left side being black, right side being white"
+              />
+              <figcaption class="tile__text">
+                <h2 class="tile__text__title">science faculty coimbra</h2>
+                <span class="tile__text__author">by Aires Mateus</span>
+              </figcaption>
             </figure>
-
-            <!-- science, contact, vi-sang -->
-            <div class="content__right__wrapper">
-
-                <section class="content__right__tile science">
-                    <figure class="content__right__tile ">
-                        <img src="../Assets/Pictures/tile-science_faculty-photo.png" alt="a long building with the left side being black, right side being white"
-                        />
-                        <figcaption class="tile__text">
-                            <h2 class="tile__text__title">science faculty coimbra</h2>
-                            <span class="tile__text__author">by Aires Mateus</span>
-                        </figcaption>
-                    </figure>
-                </section>
-
-                <section class="content__right__tile contact">
-                    <a class="content__right__tile__link contact__link" href="">contact</a>
-                    <p class="content__right__tile__text contact__text">archent west group</p>
-                </section>
-
-                <section class="content__right__tile vi-sang">
-                    <figure class="content__right__tile ">
-                        <img src="../Assets/Pictures/tile-vi_sang-photo.png" alt="a tall square house with a thin first floor but wide second floor"
-                        />
-                        <figcaption class="tile__text">
-                            <h2 class="tile__text__title">vi-sang house</h2>
-                            <span class="tile__text__author">by Moon Hoon</span>
-                        </figcaption>
-                    </figure>
-                </section>
-
+            <div class="content__tile__hover science__hover">
+              <p class="content__tile__hover__text science__hover__text">
+                More photos from this collection
+              </p>
+              <a class="content__tile__hover__link science__hover__link" href=""
+                >view</a
+              >
             </div>
+          </section>
 
+          <section class="content__right__tile contact">
+            <a class="content__right__tile__link contact__link" href=""
+              >contact</a
+            >
+            <p class="content__right__tile__text contact__text">
+              archent west group
+            </p>
+          </section>
+
+          <section class="content__right__tile vi-sang">
+            <figure class="content__right__tile ">
+              <img
+                src="../Assets/Pictures/tile-vi_sang-photo.png"
+                alt="a tall square house with a thin first floor but wide second floor"
+              />
+              <figcaption class="tile__text">
+                <h2 class="tile__text__title">vi-sang house</h2>
+                <span class="tile__text__author">by Moon Hoon</span>
+              </figcaption>
+            </figure>
+            <div class="content__tile__hover vi-sang__hover">
+              <p class="content__tile__hover__text vi-sang__hover__text">
+                More photos from this collection
+              </p>
+              <a class="content__tile__hover__link vi-sang__hover__link" href=""
+                >view</a
+              >
+            </div>
+          </section>
         </div>
-
+      </div>
     </main>
 
     <!-- loading indicator -->
     <section class="loading">
-        <img class="loading__icon" src="../Assets/Icons/loading-square-grey.png" alt="loading icon" />
-        <img class="loading__icon" src="../Assets/Icons/loading-square-grey.png" alt="loading icon" />
-        <img class="loading__icon" src="../Assets/Icons/loading-square-black.png" alt="loading icon" />
+      <img
+        class="loading__icon"
+        src="../Assets/Icons/loading-square-grey.png"
+        alt="loading icon"
+      />
+      <img
+        class="loading__icon"
+        src="../Assets/Icons/loading-square-grey.png"
+        alt="loading icon"
+      />
+      <img
+        class="loading__icon"
+        src="../Assets/Icons/loading-square-black.png"
+        alt="loading icon"
+      />
     </section>
 
     <footer class="footer">
-        <nav>
-            <ul class="footer__nav">
+      <nav>
+        <ul class="footer__nav">
+          <li><a class="footer__nav__item" href="">projects</a></li>
 
-                <li>
-                    <a class="footer__nav__item" href="">projects</a>
-                </li>
+          <li><a class="footer__nav__item" href="">about</a></li>
 
-                <li>
-                    <a class="footer__nav__item" href="">about</a>
-                </li>
+          <li><a class="footer__nav__item" href="">contact</a></li>
 
-                <li>
-                    <a class="footer__nav__item" href="">contact</a>
-                </li>
-
-                <li>
-                    <a class="footer__nav__item footer__nav__icon" href="">back to home
-                        <img src="../Assets/Icons/footer-logo.png" alt="company logo" />
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
+          <li>
+            <a class="footer__nav__item footer__nav__icon" href=""
+              >back to home
+              <img src="../Assets/Icons/footer-logo.png" alt="company logo" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-
-</body>
-
+  </body>
+  <script src="../JS/animations.js"></script>
 </html>
-
-<!-- THINGS TO FIX -->
-
-<!-- small text on ABOUT tile is more bold than it should be
-author text is slightly more bold than it should be -->

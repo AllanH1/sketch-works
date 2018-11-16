@@ -139,15 +139,68 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav {
   align-items: flex-start;
-  z-index: 10;
-  position: absolute;
   display: flex;
-  top: 224px;
-  left: 13.5%;
-  width: 1042px;
   height: 56px;
+  justify-content: space-between;
+  left: 13.5%;
+  position: absolute;
+  top: 224px;
+  width: 1042px;
+  z-index: 10;
+}
+.nav .search-container {
+  display: flex;
+  position: relative;
+}
+.nav .search-container__close-icon {
+  opacity: 0;
+  position: absolute;
+  right: 280px;
+  transition: 0.1s;
+}
+.nav .search-container__close-icon__text {
+  font-size: 0;
+}
+.nav .search-container__close-icon--open {
+  cursor: pointer;
+  opacity: 1;
+  transition-delay: 0.6s;
+  transition: 0.3s;
+  z-index: 17;
+}
+.nav .search-container__input {
+  background-color: inherit;
+  border: none;
+  border-bottom: solid 1px black;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+  opacity: 0;
+  position: absolute;
+  padding-left: 20px;
+  right: 0px;
+  top: 0px;
+  transition: 0.4s;
+  width: 0;
+}
+.nav .search-container__input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+.nav .search-container__input--open {
+  width: 270px;
+  opacity: 1;
+  right: 25px;
+  z-index: 15;
+}
+.nav .search-container__input:focus {
+  outline: none;
 }
 .nav__link {
   text-decoration: none;
@@ -156,6 +209,31 @@ table {
 .nav__link__text {
   font-size: 0px;
 }
+.nav__link__icon--hotcakes {
+  height: 22px;
+  margin-top: -25px;
+  transition: 0.3s;
+  width: 24px;
+}
+.nav__link__icon--hotcakes:hover {
+  transform: scale(1.1);
+}
+.nav__link__icon--logo {
+  height: 55.4px;
+  margin-top: -20px;
+  transition: 0.3s;
+  width: 57px;
+}
+.nav__link__icon--logo:hover {
+  transform: scale(1.1);
+}
+.nav__link__icon--search {
+  position: relative;
+  height: 17px;
+  margin-left: 30px;
+  width: 16px;
+  z-index: 15;
+}
 .nav__link__text--search {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
@@ -163,23 +241,17 @@ table {
   font-weight: bold;
   line-height: 18px;
   margin-right: 12px;
+  position: absolute;
   text-transform: uppercase;
+  transition: 0.4s;
+  z-index: 15;
+  right: 17px;
 }
-.nav__link__icon--hotcakes {
-  height: 22px;
-  width: 24px;
-  margin-right: 471px;
-  margin-top: -25px;
-}
-.nav__link__icon--logo {
-  height: 55.4px;
-  width: 57px;
-  margin-right: 414px;
-  margin-top: -20px;
-}
-.nav__link__icon--search {
-  height: 17px;
-  width: 16px;
+.nav__link__text--search--open {
+  right: 232px;
+  opacity: 0;
+  z-index: 0;
+  cursor: initial;
 }
 
 @font-face {
@@ -242,7 +314,7 @@ table {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 312px;
+  padding-top: 40px;
   line-height: 31px;
 }
 .hero .hero__wrapper--left .hero__article__author {
@@ -254,6 +326,12 @@ table {
   letter-spacing: 0.5px;
   margin-top: 16px;
   color: #697473;
+}
+.hero .hero__wrapper--left .hero__article__hover {
+  height: 270px;
+}
+.hero .hero__wrapper--left .hero__article__hover__text {
+  padding-top: 70px;
 }
 .hero .hero__wrapper--right {
   background-color: white;
@@ -364,9 +442,13 @@ table {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  color: inherit;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  transition: 0.3s;
+}
+.content__left .content__tile__portal__link:hover {
+  transform: scale(1.06);
 }
 .content__left .news {
   background: url(../Assets/Pictures/tile-news-background.png), #74a9ca;
@@ -386,28 +468,19 @@ table {
   font-size: 0px;
   height: 0px;
   margin: 25px auto 27px auto;
+  transition: 0.4s;
   width: 75px;
 }
+.content__left .news:hover .news__text::after {
+  width: 150px;
+}
 .content__left .view {
-  background: linear-gradient(0deg, rgba(11, 15, 15, 0.93), rgba(11, 15, 15, 0.93)), url(../Assets/Pictures/tile-view-background.png);
+  background: url(../Assets/Pictures/tile-view-background.png);
   background-size: 290px 470px;
   background-position: top;
   background-repeat: no-repeat;
   height: 582px;
   margin-bottom: 52px;
-}
-.content__left .view__text {
-  margin: 0 auto;
-  padding-top: 174px;
-  width: 129px;
-}
-.content__left .view__link {
-  border: solid 2px white;
-  font-size: 19px;
-  line-height: 19px;
-  padding: 13px 42px 10px 40px;
-  margin-top: 29px;
-  margin-bottom: 212px;
 }
 .content__left .view__title {
   color: #242e2d;
@@ -416,6 +489,7 @@ table {
   line-height: 30px;
   text-transform: uppercase;
   display: inline-block;
+  margin-top: 40px;
   margin-bottom: 18px;
 }
 .content__left .view__text--small {
@@ -447,7 +521,11 @@ table {
   font-size: 0px;
   height: 0px;
   margin: 17px auto 24px auto;
+  transition: 0.4s;
   width: 75px;
+}
+.content__left .about:hover .about__text::before {
+  width: 150px;
 }
 
 @font-face {
@@ -474,6 +552,7 @@ table {
   padding: 32px 66px 23px 0;
   position: absolute;
   top: 265px;
+  z-index: 10;
 }
 .content__right .tile__villa .tile__text__title {
   color: #242e2d;
@@ -493,6 +572,19 @@ table {
   display: block;
   margin-top: 13px;
 }
+.content__right .tile__villa__hover {
+  position: absolute;
+  top: 0;
+  height: 381px;
+  width: 642px;
+}
+.content__right .tile__villa__hover__text {
+  padding-top: 65px;
+  text-align: center;
+}
+.content__right .tile__villa__hover__link {
+  margin-left: 256px;
+}
 .content__right .content__right__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -505,6 +597,7 @@ table {
 }
 .content__right .content__right__wrapper .science {
   margin-top: 65px;
+  position: relative;
 }
 .content__right .content__right__wrapper .science .tile__text__title {
   color: #242e2d;
@@ -524,6 +617,15 @@ table {
   text-transform: none;
   letter-spacing: 0.5px;
 }
+.content__right .content__right__wrapper .science__hover {
+  position: absolute;
+  height: 441px;
+  top: 0;
+  width: 290px;
+}
+.content__right .content__right__wrapper .science__hover__text {
+  padding-top: 160px;
+}
 .content__right .content__right__wrapper .contact {
   background: url(../Assets/Pictures/tile-contact-background.png), #9ad4d2;
   background-blend-mode: soft-light;
@@ -542,6 +644,10 @@ table {
   text-transform: uppercase;
   display: block;
   margin-top: 97px;
+  transition: 0.3s;
+}
+.content__right .content__right__wrapper .contact__link:hover {
+  transform: scale(1.06);
 }
 .content__right .content__right__wrapper .contact__text {
   color: white;
@@ -558,11 +664,16 @@ table {
   font-size: 0px;
   height: 0px;
   margin: 17px auto 24px auto;
+  transition: 0.4s;
   width: 75px;
+}
+.content__right .content__right__wrapper .contact:hover .contact__text::before {
+  width: 150px;
 }
 .content__right .content__right__wrapper .vi-sang {
   margin-left: 62px;
   margin-top: 61px;
+  position: relative;
 }
 .content__right .content__right__wrapper .vi-sang .tile__text__title {
   color: #242e2d;
@@ -582,6 +693,15 @@ table {
   text-transform: none;
   letter-spacing: 0.5px;
 }
+.content__right .content__right__wrapper .vi-sang__hover {
+  height: 384px;
+  position: absolute;
+  top: 0;
+  width: 290px;
+}
+.content__right .content__right__wrapper .vi-sang__hover__text {
+  padding-top: 137px;
+}
 
 .content {
   padding: 0 78px 0 80px;
@@ -589,6 +709,47 @@ table {
   display: flex;
   margin: -1px auto 0 auto;
   width: 1200px;
+}
+
+.content__tile__hover {
+  height: 470px;
+  background-color: rgba(11, 15, 15, 0.93);
+  opacity: 0;
+  transition: 0.3s;
+}
+.content__tile__hover__text {
+  color: #9b9b9b;
+  font-family: "SourceSansProLightItalic", serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  color: white;
+  margin: 0 auto;
+  padding-top: 174px;
+  width: 150px;
+}
+.content__tile__hover__link {
+  color: #242e2d;
+  font-family: "DPSDbeyond", serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: solid 2px white;
+  color: white;
+  display: inline-block;
+  font-size: 19px;
+  line-height: 19px;
+  padding: 13px 42px 10px 40px;
+  margin-top: 29px;
+  transition: 0.3s;
+}
+.content__tile__hover__link:hover {
+  transform: scale(1.04);
+}
+
+.content__tile__hover:hover {
+  opacity: 1;
 }
 
 .loading {

@@ -21,9 +21,14 @@
     }
     &__link {
       @include portal-link;
+      color: inherit;
       display: inline-block;
       text-decoration: none;
-      color: inherit;
+      transition: 0.3s;
+    }
+
+    &__link:hover {
+      transform: scale(1.06);
     }
   }
 
@@ -45,42 +50,28 @@
       font-size: 0px;
       height: 0px;
       margin: 25px auto 27px auto;
+      transition: 0.4s;
       width: 75px;
     }
   }
 
+  .news:hover .news__text::after {
+    width: 150px;
+  }
+
   .view {
-    background: linear-gradient(
-        0deg,
-        rgba(11, 15, 15, 93%),
-        rgba(11, 15, 15, 93%)
-      ),
-      url(../Assets/Pictures/tile-view-background.png);
+    background: url(../Assets/Pictures/tile-view-background.png);
     background-size: 290px 470px;
     background-position: top;
     background-repeat: no-repeat;
     height: 582px;
     margin-bottom: 52px;
 
-    &__text {
-      margin: 0 auto;
-      padding-top: 174px;
-      width: 129px;
-    }
-
-    &__link {
-      border: solid 2px white;
-      font-size: 19px;
-      line-height: 19px;
-      padding: 13px 42px 10px 40px;
-      margin-top: 29px;
-      margin-bottom: 212px;
-    }
-
     // "URBAN ANGELS"
     &__title {
       @include photo-text-title;
       display: inline-block;
+      margin-top: 40px;
       margin-bottom: 18px;
     }
 
@@ -112,7 +103,12 @@
       font-size: 0px;
       height: 0px;
       margin: 17px auto 24px auto;
+      transition: 0.4s;
       width: 75px;
     }
+  }
+
+  .about:hover .about__text::before {
+    width: 150px;
   }
 }

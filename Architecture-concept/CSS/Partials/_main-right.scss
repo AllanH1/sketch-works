@@ -16,6 +16,7 @@
       padding: 32px 66px 23px 0;
       position: absolute;
       top: 265px;
+      z-index: 10;
 
       &__title {
         @include photo-text-title;
@@ -26,6 +27,22 @@
         @include photo-text-small;
         display: block;
         margin-top: 13px;
+      }
+    }
+
+    &__hover {
+      position: absolute;
+      top: 0;
+      height: 381px;
+      width: 642px;
+
+      &__text {
+        padding-top: 65px;
+        text-align: center;
+      }
+
+      &__link {
+        margin-left: 256px;
       }
     }
   }
@@ -43,6 +60,7 @@
 
     .science {
       margin-top: 65px;
+      position: relative;
 
       .tile__text {
         &__title {
@@ -54,6 +72,17 @@
 
         &__author {
           @include photo-text-small;
+        }
+      }
+
+      &__hover {
+        position: absolute;
+        height: 441px;
+        top: 0;
+        width: 290px;
+
+        &__text {
+          padding-top: 160px;
         }
       }
     }
@@ -70,6 +99,11 @@
         @include portal-link;
         display: block;
         margin-top: 97px;
+        transition: 0.3s;
+      }
+
+      &__link:hover {
+        transform: scale(1.06);
       }
 
       &__text {
@@ -84,13 +118,20 @@
         font-size: 0px;
         height: 0px;
         margin: 17px auto 24px auto;
+        transition: 0.4s;
         width: 75px;
       }
+    }
+
+    .contact:hover .contact__text::before {
+      width: 150px;
     }
 
     .vi-sang {
       margin-left: 62px;
       margin-top: 61px;
+      position: relative;
+
       .tile__text {
         &__title {
           @include photo-text-title;
@@ -101,6 +142,17 @@
 
         &__author {
           @include photo-text-small;
+        }
+      }
+
+      &__hover {
+        height: 384px;
+        position: absolute;
+        top: 0;
+        width: 290px;
+
+        &__text {
+          padding-top: 137px;
         }
       }
     }

@@ -8,3 +8,38 @@
   margin: -1px auto 0 auto;
   width: 1200px;
 }
+
+.content__tile__hover {
+  height: 470px;
+  background-color: rgba(11, 15, 15, 93%);
+  opacity: 0;
+  transition: 0.3s;
+
+  &__text {
+    @include photo-text-small;
+    color: white;
+    margin: 0 auto;
+    padding-top: 174px;
+    width: 150px;
+  }
+
+  &__link {
+    @include photo-text-title;
+    border: solid 2px white;
+    color: white;
+    display: inline-block;
+    font-size: 19px;
+    line-height: 19px;
+    padding: 13px 42px 10px 40px;
+    margin-top: 29px;
+    transition: 0.3s;
+  }
+
+  &__link:hover {
+    transform: scale(1.04);
+  }
+}
+
+.content__tile__hover:hover {
+  opacity: 1;
+}
