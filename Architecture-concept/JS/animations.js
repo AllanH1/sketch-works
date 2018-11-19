@@ -1,3 +1,5 @@
+// animation for search bar in top nav
+
 const searchText = document.querySelector(".nav__link__text--search");
 const searchIcon = document.querySelector(".nav__link__icon--search");
 const searchInput = document.querySelector(".search-container__input");
@@ -16,6 +18,23 @@ const closeSearch = () => {
   closeInputIcon.classList.remove("search-container__close-icon--open");
 };
 
-searchText.addEventListener("click", openSearch);
-searchIcon.addEventListener("click", openSearch);
-closeInputIcon.addEventListener("click", closeSearch);
+(() => {
+  searchText.addEventListener("click", openSearch);
+  searchIcon.addEventListener("click", openSearch);
+  closeInputIcon.addEventListener("click", closeSearch);
+})();
+
+// parallax sroll effect on hero
+
+const hero = document.querySelector(".hero");
+
+const heroParallax = () => {
+  const windowScrollTop = document.documentElement.scrollTop;
+  hero.style.backgroundPositionY = `-${windowScrollTop / 8}px`;
+};
+
+window.onscroll = () => {
+  if (document.documentElement.scrollTop < 350) {
+    heroParallax();
+  }
+};

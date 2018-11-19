@@ -268,7 +268,6 @@ a {
 }
 .hero {
   background: url(../Assets/Pictures/hero-background.png), white;
-  background-position: top;
   background-repeat: no-repeat;
   display: flex;
   width: 1200px;
@@ -745,7 +744,8 @@ a {
   transition: 0.3s;
 }
 .content__tile__hover__link:hover {
-  transform: scale(1.04);
+  background-color: white;
+  color: black;
 }
 
 .content__tile__hover:hover {
@@ -764,7 +764,83 @@ a {
 .loading__icon {
   margin: 0 10px;
 }
+.loading__icon .colors {
+  stroke: #a5acab;
+  stroke-width: 2;
+}
+.loading__icon--left {
+  animation: loading-scale--left 1s infinite;
+}
+.loading__icon--left .colors--left {
+  animation: loading-stroke--left 1s infinite;
+}
+.loading__icon--middle {
+  animation: loading-scale--middle 1s infinite;
+}
+.loading__icon--middle .colors--middle {
+  animation: loading-stroke--middle 1s infinite;
+}
+.loading__icon--right {
+  animation: loading-scale--right 1s infinite;
+}
+.loading__icon--right .colors--right {
+  animation: loading-stroke--right 1s infinite;
+}
 
+@keyframes loading-scale--left {
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+}
+@keyframes loading-scale--middle {
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+}
+@keyframes loading-scale--right {
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+}
+@keyframes loading-stroke--left {
+  50% {
+    stroke: black;
+  }
+  75% {
+    stroke: black;
+  }
+}
+@keyframes loading-stroke--middle {
+  25% {
+    stroke: #a5acab;
+  }
+  50% {
+    stroke: black;
+  }
+  75% {
+    stroke: black;
+  }
+}
+@keyframes loading-stroke--right {
+  50% {
+    stroke: #a5acab;
+  }
+  75% {
+    stroke: black;
+  }
+}
 .footer {
   background-color: white;
   margin: -1px auto 171px auto;
@@ -788,10 +864,20 @@ a {
   margin-right: 36px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.1s;
+}
+.footer__nav__item:hover {
+  color: #6f7272;
 }
 .footer__nav__icon {
   font-size: 0px;
   margin-left: 666px;
+}
+.footer__nav__icon__img {
+  transition: 0.3s;
+}
+.footer__nav__icon__img:hover {
+  transform: scale(1.1);
 }
 
 body {

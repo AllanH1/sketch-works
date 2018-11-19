@@ -9,5 +9,109 @@
 
   &__icon {
     margin: 0 10px;
+
+    .colors {
+      stroke: #a5acab;
+      stroke-width: 2;
+    }
+  }
+
+  &__icon--left {
+    animation: loading-scale--left 1s infinite;
+
+    .colors--left {
+      animation: loading-stroke--left 1s infinite;
+    }
+  }
+
+  &__icon--middle {
+    animation: loading-scale--middle 1s infinite;
+
+    .colors--middle {
+      animation: loading-stroke--middle 1s infinite;
+    }
+  }
+
+  &__icon--right {
+    animation: loading-scale--right 1s infinite;
+
+    .colors--right {
+      animation: loading-stroke--right 1s infinite;
+    }
+  }
+}
+
+// ====================
+// changes scale
+// ====================
+
+@keyframes loading-scale--left {
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes loading-scale--middle {
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes loading-scale--right {
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+}
+// ====================
+// changes stroke color
+// ====================
+
+@keyframes loading-stroke--left {
+  50% {
+    stroke: black;
+  }
+
+  75% {
+    stroke: black;
+  }
+}
+
+@keyframes loading-stroke--middle {
+  25% {
+    stroke: #a5acab;
+  }
+
+  50% {
+    stroke: black;
+  }
+
+  75% {
+    stroke: black;
+  }
+}
+
+@keyframes loading-stroke--right {
+  50% {
+    stroke: #a5acab;
+  }
+
+  75% {
+    stroke: black;
   }
 }

@@ -20,11 +20,24 @@
       margin-right: 36px;
       text-decoration: none;
       text-transform: uppercase;
+      transition: 0.1s;
+    }
+
+    &__item:hover {
+      color: #6f7272;
     }
 
     &__icon {
       font-size: 0px;
       margin-left: 666px;
+
+      &__img {
+        transition: 0.3s;
+      }
+
+      &__img:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
